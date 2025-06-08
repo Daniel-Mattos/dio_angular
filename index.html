@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/card.css" defer>
     <script src="src/components/CardNews.js" defer></script>
-    <script src="src/components/TituloDinamico.js "></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
     <title>Angular</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>Neymar jr</span>
-                <a href="https://www.instagram.com/neymarjr/">Neymar da Silva Santos Júnior</a>
-                <p>Melhor jogador de futebol</p>
-            </div>
-            <div class="card__rigth">
-                <img src="./assets/neymar.jpg" alt="imagem do neymar">
-            </div>
-        </div>
-    </div>
-    <card-news></card-news>
-    <card-news></card-news>
-    <card-news></card-news>
-    <titulo-dinamico></titulo-dinamico>
+    <card-news 
+        autor="Neymar"
+        title="Neymar da Silva Santos Júnior"
+        link-url="https://www.instagram.com/neymarjr/"
+        content="Melhor jogador de futebol"
+        photo="./assets/neymar.jpg"
+    >
+    </card-news>
+    <card-news 
+        autor="Daniel"
+        title="Programador"
+        link-url="https://www.instagram.com/_dan_mattos/"
+        content="Melhor Programador"
+        photo=""
+    >
+    </card-news>
+
 </body>
+
 </html>
