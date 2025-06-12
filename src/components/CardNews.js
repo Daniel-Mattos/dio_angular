@@ -25,11 +25,11 @@ class Cardnews extends HTMLElement{
         const newsContent= document.createElement("p");
         newsContent.textContent = this.getAttribute("content");
 
-        cardRight.appendChild(autor)
-        cardRight.appendChild(linkTitle)
-        cardRight.appendChild(newsContent)
+        cardLeft.appendChild(autor)
+        cardLeft.appendChild(linkTitle)
+        cardLeft.appendChild(newsContent)
 
-        cardRight.setAttribute("class","card_right")
+        cardRight.setAttribute("class","card__right")
 
         const newsImage = document.createElement("img");
         newsImage.src = (this.getAttribute("photo")||"./assets/default.png")
